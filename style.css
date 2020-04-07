@@ -1,0 +1,46 @@
+body{
+
+    margin:auto;
+    margin-top: 2vh;;
+    
+    border:2px dashed blue;
+    width:95vw;
+    height:95vh;
+    background-color: white;
+ 
+
+}
+
+.menucontainer{
+
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr 7fr;
+   position:fixed;
+   width:95vw;
+   height:20vh;
+   background-color: beige;
+
+}
+
+
+.menu{
+    margin:auto;
+    text-align: center;
+}
+
+
+.name{
+cursor:pointer;
+   margin:auto;
+}
+.maincontainer{
+    margin:auto;
+    margin-top:25vh;
+    /* border:1px dotted black; */
+    width:93vw;
+    height:50vh;
+    padding-top: 15vh;
+    display:grid;
+    grid-template-columns:1fr;    
+    overflow: scroll;
+}
