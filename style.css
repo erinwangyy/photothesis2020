@@ -1,12 +1,12 @@
 body{
 
     margin:auto;
-    margin-top: 2vh;;
+    margin-top: 2vh;
     
-    border:2px dashed blue;
+    border:0.1px dashed white;
     width:95vw;
     height:95vh;
-    background-color: white;
+ 
  
 
 }
@@ -22,17 +22,21 @@ body{
 
 }
 
-
+.titlecontainer{
+    position:fixed;
+    width:95vw;
+    height:20vh;
+    text-align: center;
+    font-size: 1.5em;
+}
+.title{
+  padding-top: 5vh;
+}
 .menu{
     margin:auto;
     text-align: center;
 }
 
-
-.name{
-cursor:pointer;
-   margin:auto;
-}
 .maincontainer{
     margin:auto;
     margin-top:25vh;
@@ -41,6 +45,39 @@ cursor:pointer;
     height:50vh;
     padding-top: 15vh;
     display:grid;
-    grid-template-columns:1fr;    
+    grid-template-columns:1fr 1fr 1fr;    
     overflow: scroll;
+}
+.name{
+cursor:pointer;
+   margin:auto;
+   font-size: 0.9em;
+
+}
+
+.letter{
+    cursor:pointer;
+    margin:auto;
+   grid-column: 1/2;
+}
+
+.divide{
+grid-column: 1/4;
+border-top: 0.5px dashed grey;
+height:1vh;
+
+}
+
+.letterbar{
+display: grid;
+width:95vw;
+grid-template-columns: repeat(17, 1fr);
+position:fixed;
+padding-top: 20vh;
+
+}
+
+.bar{
+    /* background-color: pink; */
+    border-bottom: 1px solid black;
 }
