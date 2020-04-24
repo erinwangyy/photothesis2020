@@ -1,139 +1,106 @@
 body{
-
-    margin:auto;
-    margin-top: 2vh;
-    
-    border:0.1px dashed white;
-    width:95vw;
-    height:95vh;
- 
- 
+   
+background-image: url(assets/pictures/augustine-wong-kTg4NXEmfs8-unsplash.jpg);
+cursor:default;
+overflow:hidden;
 
 }
-
-.menucontainer{
-
-   display:grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   position:fixed;
-   width:95vw;
-   height:20vh;
-   background-color: beige;
+.cursor{
+    position: relative;
+    font-size: 0.8em;
+    /* opacity:0; */
+    color:black;
 
 }
-
-.titlecontainer{
-    position:fixed;
-    width:95vw;
-    height:15vh;
-    text-align: center;
-    font-size: 1.5em;
-    background-color:white;
-}
-.title{
-  padding-top: 5vh;
-}
-.menu{
-    margin:auto;
-    text-align: center;
-}
-
 .maincontainer{
-    margin:auto;
-    margin-top:20vh;
-    /* border:1px dotted black; */
-    width:93vw;
-    height:53vh;
-    /* padding-top: 15vh; */
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;    
-    overflow:hidden;
-    /* border: lightgray dashed 0.5px; */
-
-}
-.name{
-cursor:pointer;
-font-size: 0.8em;
-padding-left: 3vw;
-height:3vh;
-/* border:1px solid black;  
-background-color: lightgreen; */
-}
-
-.letter{
-width:5vw;
-
-}
-
-/* .divide{
-/* grid-column: 1/4; */
-border-top: 0.5px dashed grey;
-height:1vh;
-width:25vw;
-} */
-
-.letterbar{
+    width:120vw;
+    height:100vh;
 display: grid;
-width:95vw;
-grid-template-columns: repeat(17, 1fr);
-position:fixed;
-padding-top: 20vh;
-
-} 
-
-.bar{
-    /* background-color: pink; */
-    border-bottom: 1px solid black;
-}
-
-.ending{
-margin-top: 10vh;
-border:1px dotted lightgray;
-border-top:0px;
-    height:10vh;
-
-    display: grid;
-    
-
-}
-.end1{
-padding-top:5vh;
-    font-size:0.8em;
-    color:grey;
+grid-template-columns: 1fr 1fr;
+font-size: 1.5em;
+margin-left: 2vw;
+overflow:hidden;
+overflow: scroll;
+padding-top: 5vh;
+/* font-family: 'Bebas Neue', cursive; */
+font-family: 'Roboto', sans-serif;
 }
 
 .list1{
-/* display: grid;
-grid-template-columns: 1fr 4fr; */
-width:28vw;
-height:50vh;
-overflow: scroll;
-margin-left: 1vw;
-background-color: lightpink;
+    display:grid;
+    grid-row-gap:0.2em;
+    grid-template-columns: 1fr 6fr;
 }
-
 .list2{
-    /* display: grid;
-    grid-template-columns: 1fr 4fr; */
-    width:28vw;
-    height:50vh;
-    overflow: scroll;
-    margin-left: 1vw;
-    background-color: lightyellow;
-    }
+
+  margin-left: 2vw;
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+}
 .name:hover{
-    /* text-emphasis: filled double-circle blue;
--webkit-text-emphasis: filled double-circle blue; */
-/* text-emphasis: '>';
--webkit-text-emphasis: '>'; */
-    /* color:blue; */
-    background-color:white;
+    cursor:e-resize;
+    color: blue;
+}
+.ending{
+    margin-top: 5vh;
+padding-top:10vh;
+    /* background-color:rgb(255, 255, 255,0.5); */
+    width:120vw;
+
+    font-size: 0.8em;
+    color:grey;
+    border-bottom: dotted black 1px;
+}
+.header{
+    width:120vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.list3{
-    width:30vw;
-    margin-left: 2vw;
-    height:50vh;
-overflow: scroll;
-background-color: mediumaquamarine;
+.title{
+   height:5vh;
+  border-top: dotted black 1px;
+}
+
+.introduction{
+
+display:none;
+height:30vh;
+}
+.text{
+text-align: center;
+padding-left: 15vw;
+width:70vw;
+padding-top: 10vh;
+font-size:1.2em;
+}
+
+
+
+.loading {padding-top: 40vh;
+    padding-left: 20vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+}
+.text0:hover{
+    color:blue
+}
+.text0{
+font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.introduction{
+    cursor:default;
+}
+.text2{
+    position: relative;
+
+    font-size: 30px;
+
+   
 }

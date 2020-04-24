@@ -120,3 +120,47 @@ function viewedVCU(){
 function viewedYA(){
         document.querySelector("#YA").style.color="blue";    
         }
+
+
+
+ function cursor(){
+                var x= event.pageX;
+                var y=event.pageY;
+                var cursor=document.querySelector(".cursor");
+                console.log(x);
+
+cursor.style.top=y+"px";
+cursor.style.left=x+"px";
+
+
+
+}
+// function hover(){
+// // document.querySelector(".cursor").style.opacity=100;
+// // document.querySelector(".cursor").style.color="grey";
+
+
+
+// }
+// function unhover(){
+//         // document.querySelector(".cursor").style.opacity=0;
+
+//         document.querySelector(".cursor").style.color="black";
+        
+//         }
+
+function show(){
+       
+        setTimeout(function(){ 
+        document.querySelector(".introduction").style.display="block"; }, 100);
+}
+
+function unshow(){
+       
+        setTimeout(function(){  document.querySelector(".title").style.color="black";
+        document.querySelector(".introduction").style.display="none"; }, 800);
+}
+function start(){
+        document.querySelector(".loading").style.display="none"
+        document.querySelector("body").style.overflow="scroll"
+}
